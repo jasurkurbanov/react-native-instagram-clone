@@ -1,0 +1,5 @@
+For custom bottom tabs ->
+https://stackoverflow.com/questions/60566917/react-native-custom-bottom-tabs
+
+For custom icons theme ->
+https://stackoverflow.com/questions/43495510/how-to-import-icons-from-multiple-files-in-react-native-vector-icons
