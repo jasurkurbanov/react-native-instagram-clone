@@ -17,8 +17,56 @@ import {
   Card,
   ButtonAuth,
   Button,
+  ActivityFollowingCard,
+  ActivityCommentCard,
+  About,
 } from './src/components';
 
+import Welcome from './src/screens/Welcome';
+
+const App = () => {
+  return (
+    <>
+      <Welcome />
+    </>
+  );
+};
+
+const styles = StyleSheet.create({});
+
+export default App;
+
+/*
+ <>
+     <Text title="This is sample text hello world" h24 medium upper />
+      <Input />
+      <Input password />
+      <HeaderBack />
+      <HeaderMain centerView={<Text title="Insta" h16 />} iconName="md-menu" />
+       <HeaderMain
+        centerView={<Text title="Insta 2" h16 />}
+        iconName="ios-chatbubbles"
+      /> 
+       <Avatar />
+      <Avatar isSmall />
+      <AddStory />
+      <AddStory isSmall /> 
+     <FlatList
+        data={DATA}
+        renderItem={(item) => <Card imgUrl={item.img} />}
+        keyExtractor={(item) => item.id}
+        numColumns={2}
+        style={{flex: 1}}
+        contentContainerStyle={{paddingVertical: 20}}
+      /> 
+       <ButtonAuth />
+      <ButtonAuth secondary />
+      <Button title="Click" primary />
+      <Button title="Click" /> 
+      <ActivityFollowingCard />
+      <ActivityCommentCard />
+      <About />*/
+/*
 const DATA = [
   {
     id: 1,
@@ -30,39 +78,4 @@ const DATA = [
     img:
       'https://images.all-free-download.com/images/graphicthumb/goa_small_bird_202958.jpg',
   },
-];
-const App = () => {
-  return (
-    <>
-      {/* <Text title="This is sample text hello world" h24 medium upper />
-      <Input />
-      <Input password />
-      <HeaderBack /> */}
-      <HeaderMain centerView={<Text title="Insta" h16 />} iconName="md-menu" />
-      {/* <HeaderMain
-        centerView={<Text title="Insta 2" h16 />}
-        iconName="ios-chatbubbles"
-      /> */}
-      {/* <Avatar />
-      <Avatar isSmall />
-      <AddStory />
-      <AddStory isSmall /> */}
-      {/* <FlatList
-        data={DATA}
-        renderItem={(item) => <Card imgUrl={item.img} />}
-        keyExtractor={(item) => item.id}
-        numColumns={2}
-        style={{flex: 1}}
-        contentContainerStyle={{paddingVertical: 20}}
-      /> */}
-      {/* <ButtonAuth />
-      <ButtonAuth secondary />
-      <Button title="Click" primary />
-      <Button title="Click" /> */}
-    </>
-  );
-};
-
-const styles = StyleSheet.create({});
-
-export default App;
+];*/

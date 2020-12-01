@@ -9,15 +9,19 @@ interface ButtonProps {
   onPress?: ((event: GestureResponderEvent) => void) | undefined;
 }
 
-const Button = memo<ButtonProps>(({title, primary, onPress}) => {
+const Button = memo<ButtonProps>(({title, primary, onPress, style}) => {
   const textR = primary ? styles.textPrimary : styles.textSecondary;
   return (
     <Pressable
-      style={primary ? styles.primaryContainer : styles.secondaryContainer}
+      style={[
+        primary ? styles.primaryContainer : styles.secondaryContainer,
+        style,
+      ]}
       onPress={onPress}>
       <Text
         title={title}
-        h16
+        h12
+        bold
         style={primary ? styles.textPrimary : styles.textSecondary}
       />
     </Pressable>
@@ -26,21 +30,23 @@ const Button = memo<ButtonProps>(({title, primary, onPress}) => {
 
 const styles = StyleSheet.create({
   primaryContainer: {
-    width: '100%',
-    padding: 15,
-    alignItems: 'center',
-    backgroundColor: '#07c4c1',
+    backgroundColor: '#1aa8eb',
     borderRadius: 5,
+    height: 30,
+    paddingHorizontal: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   secondaryContainer: {
-    width: '100%',
-    padding: 15,
+    height: 30,
+    paddingHorizontal: 20,
     alignItems: 'center',
+    justifyContent: 'center',
     borderRadius: 5,
     borderWidth: 1,
   },
 
   textPrimary: {color: 'white'},
-  textSecondary: {color: 'black'},
+  textSecondary: {color: 'black', alignSelf: 'center'},
 });
 export {Button};
