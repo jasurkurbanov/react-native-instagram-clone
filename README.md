@@ -2,16 +2,7 @@
 
 
 ## Developement of this project is divided into three main sections:
-** [1. Creating UI components](#ui-section-1)**
-  - [Heading](#heading)
-  * [Sub-heading](#sub-heading)
-    + [Sub-sub-heading](#sub-sub-heading)
-- [Heading](#heading-1)
-  * [Sub-heading](#sub-heading-1)
-    + [Sub-sub-heading](#sub-sub-heading-1)
-- [Heading](#heading-2)
-  * [Sub-heading](#sub-heading-2)
-    + [Sub-sub-heading](#sub-sub-heading-2)
+**[1. Creating UI components](#ui-section-1)**
     
   * [1.1. Design App UI](#ui-section-1-1)
   * [1.2. Mock Up Design](#ui-section-1-2)  
