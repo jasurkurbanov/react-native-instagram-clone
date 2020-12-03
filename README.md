@@ -27,7 +27,8 @@ Design available through this [link](https://viewer.diagrams.net/?target=blank&h
 
 ## 1.3 Break UI Into Components Hierarchy
 ## 1.3.1 Common Components
-![ss (1)](https://user-images.githubusercontent.com/41279178/101021775-2c51fc80-3592-11eb-9729-8eaa9b070187.png)
+![2ed](https://user-images.githubusercontent.com/41279178/101022229-e47fa500-3592-11eb-8e1f-cff9c9d97cc8.png)
+
 ## 1.3.2 Specific Components
 ## 1.3.3 Components Hierarchy
 ![hierarchy](https://user-images.githubusercontent.com/41279178/101021407-b51c6880-3591-11eb-96c3-c18ca2d60abe.png)
