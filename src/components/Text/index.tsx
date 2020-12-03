@@ -1,9 +1,34 @@
 import React, {memo} from 'react';
-import {Text as MyText, StyleSheet} from 'react-native';
+import {Text as MyText, StyleProp, TextStyle, StyleSheet} from 'react-native';
 import {ScaledSheet} from 'react-native-size-matters';
 //import colors from './../../constants/colors';
 
-const Text = memo(
+interface TextProps {
+  h12?: boolean | undefined;
+  h14?: boolean | undefined;
+  h16?: boolean | undefined;
+  h18?: boolean | undefined;
+  h20?: boolean | undefined;
+  h24?: boolean | undefined;
+  h30?: boolean | undefined;
+  h7?: boolean | undefined;
+  h8?: boolean | undefined;
+  h9?: boolean | undefined;
+  body?: boolean | undefined;
+  title?: string | undefined;
+  bold?: boolean | undefined;
+  medium?: boolean | undefined;
+  regular?: boolean | undefined;
+  italic?: boolean | undefined;
+  thin?: boolean | undefined;
+  white?: boolean | undefined;
+  upper?: boolean | undefined;
+  lower?: boolean | undefined;
+  center?: boolean | undefined;
+  lines?: number | undefined;
+  style?: StyleProp<TextStyle>;
+}
+const Text = memo<TextProps>(
   ({
     h12,
     h14,
@@ -23,14 +48,12 @@ const Text = memo(
     center = false,
     lines,
     style,
-    ...otherProps
   }) => {
     const {h12Style, h14Style, h16Style, h18Style, h24Style, h30Style} = styles;
     return (
       <MyText
         numberOfLines={lines || 0}
         ellipsizeMode={'tail'}
-        {...otherProps}
         style={[
           {fontFamily: 'Roboto-Regular'}, //default font family
           h12 && StyleSheet.flatten(h12Style),

@@ -4,8 +4,8 @@ import {
   TouchableOpacity,
   StyleProp,
   ViewStyle,
+  View,
   GestureResponderEvent,
-  Image,
 } from 'react-native';
 import Icon from './../../constants/icons';
 import {Text} from './../Text';
@@ -14,21 +14,18 @@ interface AvatarProps {
   isSmall?: boolean | undefined;
   imgUrl?: string | undefined;
   viewStyle?: StyleProp<ViewStyle>;
-  onPicturePress?: ((event: GestureResponderEvent) => void) | undefined;
+  onPress?: ((event: GestureResponderEvent) => void) | undefined;
 }
 
 const AddStory = memo<AvatarProps>(
-  ({
-    isSmall = false,
-    viewStyle,
-    onPicturePress,
-    imgUrl = 'https://images.all-free-download.com/images/graphicthumb/goa_small_bird_202958.jpg',
-  }) => {
+  ({isSmall = false, viewStyle, onPress, imgUrl}) => {
+    const {circleSmall, circleBig} = styles;
     return (
-      <TouchableOpacity
-        style={isSmall ? styles.circleSmall : styles.circleBig}
-        onPress={onPicturePress}>
-        <Icon.Ionicons name="ios-add" size={24} color="#000" />
+      <TouchableOpacity onPress={onPress}>
+        <View style={isSmall ? circleSmall : circleBig}>
+          <Icon.Ionicons name="ios-add" size={24} color="#000" />
+        </View>
+        <Text title="New Story" h12 style={{alignSelf: 'center'}} />
       </TouchableOpacity>
     );
   },

@@ -22,7 +22,7 @@ import {
   About,
 } from './src/components';
 
-import Welcome from './src/screens/Welcome';
+import Welcome from './src/screens/WelcomeScreen';
 
 const App = () => {
   return (

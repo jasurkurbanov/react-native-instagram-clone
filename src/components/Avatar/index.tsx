@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
 import {
   StyleSheet,
-  TouchableOpacity,
+  Pressable,
   StyleProp,
   ViewStyle,
   GestureResponderEvent,
@@ -17,23 +17,19 @@ interface AvatarProps {
 }
 
 const Avatar = memo<AvatarProps>(
-  ({
-    isSmall = false,
-    viewStyle,
-    onPicturePress,
-    imgUrl = 'https://images.all-free-download.com/images/graphicthumb/goa_small_bird_202958.jpg',
-  }) => {
+  ({isSmall = false, viewStyle, onPicturePress, imgUrl}) => {
+    const {circleSmall, circleBig, avatarBig, avatarSmall} = styles;
     return (
-      <TouchableOpacity style={viewStyle} onPress={onPicturePress}>
+      <Pressable style={viewStyle} onPress={onPicturePress}>
         <LinearGradient
           colors={['#EC001A', '#D20067', '#BD00A7']}
-          style={isSmall ? styles.circleSmall : styles.circleBig}>
+          style={isSmall ? circleSmall : circleBig}>
           <Image
-            style={isSmall ? styles.avatarSmall : styles.avatarBig}
+            style={isSmall ? avatarSmall : avatarBig}
             source={{uri: imgUrl}}
           />
         </LinearGradient>
-      </TouchableOpacity>
+      </Pressable>
     );
   },
 );

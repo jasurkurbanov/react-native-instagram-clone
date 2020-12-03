@@ -1,32 +1,44 @@
 import React, {memo} from 'react';
-import {StyleSheet, Pressable, GestureResponderEvent, View} from 'react-native';
-import {useTheme} from '@react-navigation/native';
+import {
+  StyleSheet,
+  Pressable,
+  StyleProp,
+  TextStyle,
+  ViewStyle,
+  GestureResponderEvent,
+} from 'react-native';
 import {Text} from './../Text';
 
 interface ButtonProps {
   title?: string;
   primary?: boolean;
   onPress?: ((event: GestureResponderEvent) => void) | undefined;
+  textStyle?: StyleProp<TextStyle>;
+  viewStyle?: StyleProp<ViewStyle>;
 }
 
-const Button = memo<ButtonProps>(({title, primary, onPress, style}) => {
-  const textR = primary ? styles.textPrimary : styles.textSecondary;
-  return (
-    <Pressable
-      style={[
-        primary ? styles.primaryContainer : styles.secondaryContainer,
-        style,
-      ]}
-      onPress={onPress}>
-      <Text
-        title={title}
-        h12
-        bold
-        style={primary ? styles.textPrimary : styles.textSecondary}
-      />
-    </Pressable>
-  );
-});
+const Button = memo<ButtonProps>(
+  ({title, primary, onPress, viewStyle, textStyle}) => {
+    const {
+      primaryContainer,
+      secondaryContainer,
+      textSecondary,
+      textPrimary,
+    } = styles;
+    return (
+      <Pressable
+        style={[primary ? primaryContainer : secondaryContainer, viewStyle]}
+        onPress={onPress}>
+        <Text
+          title={title}
+          h12
+          bold
+          style={[primary ? textPrimary : textSecondary, textStyle]}
+        />
+      </Pressable>
+    );
+  },
+);
 
 const styles = StyleSheet.create({
   primaryContainer: {

@@ -1,22 +1,23 @@
 import React, {memo} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {View, ViewStyle, StyleSheet, StyleProp} from 'react-native';
 import {Avatar} from '../Avatar';
-
+import {Text} from './../Text';
 interface StoryProps {
   avatar?: string | undefined;
   title?: string | undefined;
+  style?: StyleProp<ViewStyle>;
 }
 
-const Story = memo<StoryProps>(({avatar, title}) => {
+const Story = memo<StoryProps>(({avatar, title, style}) => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, style]}>
       <Avatar imgUrl={avatar} />
-      <Text>{title}</Text>
+      <Text title={title} h12 />
     </View>
   );
 });
 
 const styles = StyleSheet.create({
-  container: {alignItems: 'center', margin: 10},
+  container: {alignItems: 'center', margin: 5},
 });
 export {Story};

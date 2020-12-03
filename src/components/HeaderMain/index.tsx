@@ -13,8 +13,8 @@ import {W} from '../../constants/helpers';
 import Icon from '../../constants/icons';
 
 interface HeaderProps {
-  onPressCamera: ((event: GestureResponderEvent) => void) | undefined;
-  onPressMessages: ((event: GestureResponderEvent) => void) | undefined;
+  onPressCamera?: ((event: GestureResponderEvent) => void) | undefined;
+  onPressMessages?: ((event: GestureResponderEvent) => void) | undefined;
   viewStyle?: StyleProp<ViewStyle>;
   centerView?: any;
   iconName?: string;
@@ -25,11 +25,11 @@ const HeaderMain = memo<HeaderProps>(
     return (
       <View style={[styles.container, viewStyle]}>
         <Pressable onPress={onPressCamera}>
-          <Icon.Ionicons name="settings-outline" size={25} color="#afaeae" />
+          <Icon.SimpleLineIcons name="settings" size={25} color="#afaeae" />
         </Pressable>
         {centerView}
         <Pressable onPress={onPressMessages}>
-          <Icon.Ionicons name={iconName} size={25} color="#afaeae" />
+          <Icon.SimpleLineIcons name={iconName} size={22} color="#afaeae" />
         </Pressable>
       </View>
     );
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
+    paddingHorizontal: 15,
   },
   iconsBox: {
     width: '20%',

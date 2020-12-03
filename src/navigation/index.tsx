@@ -58,9 +58,9 @@ const TopTabsNavitaion = () => {
 };
 import Icon from '../constants/icons';
 //StackNavigation
-import Welcome from './../screens/Welcome';
-import Login from './../screens/Login';
-import Register from './../screens/Register';
+import Welcome from '../screens/WelcomeScreen';
+import Login from '../screens/LoginScreen';
+import Register from '../screens/RegisterScreen';
 
 const IntroStack = createStackNavigator();
 

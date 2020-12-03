@@ -1,8 +1,8 @@
 import React, {memo, useState} from 'react';
 import {TextInput, Pressable, View, StyleSheet} from 'react-native';
-import Icon from '../../constants/icons';
+import Icon from './../../../constants/icons';
 
-interface InputT {
+interface SearchInputProps {
   name?: string;
   value?: string;
   placeholder?: string;
@@ -31,7 +31,7 @@ interface InputT {
   password?: boolean | undefined;
 }
 
-const Input = memo<InputT>(
+const SearchInput = memo<SearchInputProps>(
   ({
     name,
     value,
@@ -44,26 +44,13 @@ const Input = memo<InputT>(
     multiline,
     numberOfLines,
     autoCapitalize,
+    secureTextEntry,
     password,
   }) => {
-    const [icon, setIcon] = useState(false);
     const {inputStyle, errorStyle} = styles;
 
-    const onIconPress = () => {
-      setIcon(!icon);
-    };
-
-    const {container, iconStyle} = styles;
     return (
-      <View style={container}>
-        <View style={iconStyle}>
-          <Icon.MaterialCommunityIcons
-            name={password ? 'key-variant' : 'email'}
-            size={24}
-            color="black"
-          />
-        </View>
-
+      <View style={styles.container}>
         <TextInput
           style={inputStyle}
           value={value}
@@ -76,15 +63,9 @@ const Input = memo<InputT>(
           multiline={multiline}
           numberOfLines={numberOfLines}
         />
-        {password && (
-          <Pressable style={iconStyle} onPress={onIconPress}>
-            <Icon.MaterialCommunityIcons
-              name={icon ? 'eye' : 'eye-off'}
-              size={24}
-              color="black"
-            />
-          </Pressable>
-        )}
+        <View style={styles.iconStyle}>
+          <Icon.Ionicons name={'ios-search'} size={24} color="black" />
+        </View>
       </View>
     );
   },
@@ -92,18 +73,20 @@ const Input = memo<InputT>(
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    width: '85%',
+    paddingHorizontal: 10,
     backgroundColor: '#E3E3E3',
     flexDirection: 'row',
+    borderRadius: 10,
     alignItems: 'center',
   },
   iconStyle: {
-    width: '15%',
+    padding: 10,
     justifyContent: 'center',
     alignItems: 'center',
   },
   inputStyle: {
-    width: '70%',
+    width: '85%',
     fontSize: 16,
     alignSelf: 'center',
     paddingHorizontal: 5,
@@ -117,7 +100,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export {Input};
+export {SearchInput};
 
 /*
  {touched[name] && errors[name] ? (
