@@ -18,6 +18,7 @@
 
 # Creating UI components 
 ## Design App UI
+Design is available thourght this [link](shorturl.at/bzQ19)
 ## Mock Up Design
 ![authdesign](https://user-images.githubusercontent.com/41279178/101013190-bb0c4c80-3585-11eb-8b35-272762297ab3.png)
 ![main](https://user-images.githubusercontent.com/41279178/101013427-150d1200-3586-11eb-86dd-6b669f342d3e.png)
