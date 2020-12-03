@@ -6,11 +6,11 @@
     
   * [1.1. Design App UI](#design-app-ui)
   * [1.2. Mock App Design](#mock-app-design)  
-  * [1.3. Break UI Into Components Hierarchy](#ui-section-1-3)
-      * [1.3.1. Common Components](#ui-section-1-3-1)
-      * [1.3.2. Specific Components](#ui-section-1-3-2)
-      * [1.3.3. Components Hierarchy](#components-hierarchy)
-  * [1.4. Static App](#static-app)     
+  * [1.3. Break UI Into Components Hierarchy](#13-break-ui-into-components-hierarchy)
+      * [1.3.1. Common Components](#131-common-components)
+      * [1.3.2. Specific Components](#132-specific-components)
+      * [1.3.3. Components Hierarchy](#133-components-hierarchy)
+  * [1.4. Static App](#14-static-app)     
 **[2. Navigation](#navigation)**
 
 **[3. Business Logic Layer](#bll)**
@@ -35,7 +35,7 @@ Design available through this [link](https://viewer.diagrams.net/?target=blank&h
 #### 1.3.3 Components Hierarchy
 ![hierarchy](https://user-images.githubusercontent.com/41279178/101021407-b51c6880-3591-11eb-96c3-c18ca2d60abe.png)
 ## 1.4 Static App
-![Untitled (10)](https://user-images.githubusercontent.com/41279178/101048826-c6bb3b80-35a4-11eb-804c-6c2d2941692f.png)
 ![Untitled (9)](https://user-images.githubusercontent.com/41279178/101048436-6fb56680-35a4-11eb-85c1-267c72730806.png)
+![Untitled (10)](https://user-images.githubusercontent.com/41279178/101048826-c6bb3b80-35a4-11eb-804c-6c2d2941692f.png)
 ![Untitled (8)](https://user-images.githubusercontent.com/41279178/101047791-f0279780-35a3-11eb-8fcd-1745bd29fd35.png)
 
