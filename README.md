@@ -1,5 +1,5 @@
 # react-native-instagram-clone
-# Welcome To My Instagram Clone Project.
+
 
 ## Developement of this project is divided into three main sections:
 **[1. Creating UI components](#ui-section-1)**
