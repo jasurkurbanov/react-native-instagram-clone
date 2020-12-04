@@ -12,6 +12,8 @@
   * [1.3. Static App](#13-static-app)   
   
 **[2. Navigation](#navigation)**
+  * [2.1 Navigation Tree](#21-navigation-tree)
+  * [2.2 App Navigation ](#22-app-navigation)
 
 **[3. Business Logic Layer](#bll)**
 
@@ -38,4 +40,12 @@ Full design available through this [link](https://viewer.diagrams.net/?target=bl
 ![Untitled (9)](https://user-images.githubusercontent.com/41279178/101048436-6fb56680-35a4-11eb-85c1-267c72730806.png)
 ![Untitled (10)](https://user-images.githubusercontent.com/41279178/101048826-c6bb3b80-35a4-11eb-804c-6c2d2941692f.png)
 ![Untitled (8)](https://user-images.githubusercontent.com/41279178/101047791-f0279780-35a3-11eb-8fcd-1745bd29fd35.png)
+
+# Navigation
+
+## 2.1 Navigation Tree
+![tree](https://user-images.githubusercontent.com/41279178/101120424-6dd4bd00-360f-11eb-9bf4-50ad494ffb7a.png)
+
+## 2.2 App Navigation
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/41279178/101120603-dc197f80-360f-11eb-86f2-63f33a2c981c.gif)
 
