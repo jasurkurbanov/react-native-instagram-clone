@@ -47,5 +47,5 @@ Full design available through this [link](https://viewer.diagrams.net/?target=bl
 ![tree](https://user-images.githubusercontent.com/41279178/101120424-6dd4bd00-360f-11eb-9bf4-50ad494ffb7a.png)
 
 ## 2.2 App Navigation
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/41279178/101120603-dc197f80-360f-11eb-86f2-63f33a2c981c.gif)
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/41279178/101121030-ea1bd000-3610-11eb-8578-68e941e18795.gif)
 
